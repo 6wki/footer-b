@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    color: #d2d4c8;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #d2d4c8;
+}
+
+/* Utilities */
+
+.borderBottom {
+    border-bottom: solid 1px #33415c;
+}
+
+.padding {
+    padding: 25px 0;
+}
+
+.contant-img {
+    width: 60px;
+    margin-right: 10px;
+    filter: invert(28%) sepia(6%) saturate(1007%) hue-rotate(169deg) brightness(91%) contrast(80%);
+}
+
+.media-icon {
+    width: 40px;
+    cursor: pointer;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(25deg) brightness(106%) contrast(101%);
+}
+
+/* The Footer */
+
+body {
+    height: 100vh;
+    background-color: #002855;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer {
+    background-color: #001845;
+    width: 98%;
+    margin-bottom: 70px;
+    box-shadow: 3px 3px 10px 4px #031d44;
+    display: flex;
+}
+
+/* Left Side */
+
+.left-side {
+    width: 65%;
+}
+
+/* Links */
+
+.links-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flags */
+
+.flags {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.flag {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.flag-container p {
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+/* The Footer's Bottom */
+
+.bottomLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.bottomLeft p {
+    cursor: default;
+}
+
+/* Right Side */
+
+.right-side {
+    width: 35%;
+    border-left: solid 1px #33415c;
+    display: flex;
+    flex-direction: column;
+}
+
+/* The header */
+
+.letsTalk {
+    color: white;
+    background-color: #ef233c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: default;
+}
+
+.letsTalk img {
+    filter: invert(24%) sepia(95%) saturate(4121%) hue-rotate(341deg) brightness(96%) contrast(96%);
+    width: 20px;
+}
+
+.letsTalkImg {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Contact */
+
+.emails {
+    padding: 30px 20px 0 10px;
+}
+
+.contact-Info {
+    display: flex;
+    align-items: center;
+}
+
+.firstContact {
+    margin-bottom: 30px;
+}
+
+.secondContact {
+    padding-bottom: 10px;
+}
+
+.contact-text {
+    line-height: 25px;
+}
+
+/* Email */
+
+.email-container {
+    display: flex;
+    justify-content: center;
+}
+
+.email-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px 0;
+    width: 95%;
+    border-radius: 30px;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+#email {
+    padding: 20px;
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.email-icon {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: black;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.email-icon img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(25deg) brightness(106%) contrast(101%);
+    width: 15px;
+}
+
+/* Social Media */
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border-top: solid 1px #33415c;
+}
+
+.media-icon {
+    margin: 0 5px;
+}
+
+.media-icon:hover {
+    filter: invert(28%) sepia(93%) saturate(5738%) hue-rotate(343deg) brightness(97%) contrast(92%);
+}
+
+/* Responsive Design */
+
+@media (max-width: 800px) {
+
+    body {
+        height: 100%;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .right-side {
+        width: 100%;
+        align-items: center;
+    }
+
+    .letsTalk {
+        width: 100%;
+    }
+
+    #email {
+        width: 70%;
+    }
+
+    .emails {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-container {
+        width: 95%;
+        margin: 20px 0;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+
+    .social-media-icons {
+        margin-top: 40px;
+    }
+
+    .links-list {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .flag-container {
+        margin: 10px 0;
+    }
+
+    .flags {
+        flex-direction: column;
+    }
+
+    .left-side {
+        width: 100%;
+    } 
+}

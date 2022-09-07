@@ -194,12 +194,13 @@ footer {
 }
 
 #email {
+    font-size: 16px;
+    color: #d2d4c8;
     padding: 20px;
     flex-grow: 1;
     outline: none;
     border: none;
     background-color: transparent;
-    color: white;
 }
 
 .email-icon {
